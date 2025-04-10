@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common_sub.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/sub4.css"/>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/common_sub.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#board input").click(function(){
+				$("#section").css("height","900px");
+			});
+		}); 
+	</script>
+</head>
+<body>
+	<div id="header">
+			<div class="gnb_inner">
+				<div class="gnb_wrap">
+					<div class="logo"><a href="main.html"><img src="images/logo-up-.png" alt="회사로고"/></a></div>
+					<div class="gnb_bg"></div>
+					<ul class="gnb">
+						<li><a href="sub1.html">회사소개</a>
+							<ul class="sub1">
+								<li><a href="sub1.html">회사소개</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">주요시설</a>
+							<ul class="sub2">
+								<li><a href="#">카페</a></li>
+								<li><a href="#">서점</a></li>
+								<li><a href="#">공연장</a></li>
+								<li><a href="sub2.html">전시장</a></li>
+							</ul>
+						</li>
+						<li><a href="sub3.html">프로그램</a>
+							<ul class="sub3">
+								<li><a href="sub3.html">공연</a></li>
+								<li><a href="sub3.html">전시</a></li>
+								<li><a href="sub3.html">대관/단체관람</a></li>
+							</ul>
+						</li>
+						<li><a href="sub4.html">커뮤니티</a>
+							<ul class="sub4">
+								<li><a href="sub4.html">공지사항</a></li>
+								<li><a href="sub4.html">Q&amp;A</a></li>
+								<li><a href="sub4.html">갤러리</a></li>
+							</ul>
+						</li>
+						<li><a href="sub5.html">스토어</a>
+							<ul class="sub5">
+								<li><a href="sub5.html">도서</a></li>
+								<li><a href="sub5.html">디퓨져</a></li>
+								<li><a href="sub5.html">공연굿즈</a></li>
+								<li><a href="sub5.html">원두</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="top_menu">
+						<ul>
+							<li class="login_wrap">
+								<a href="#">로그인</a>
+								<form action="#" method="post"name="login" id="login">
+									<fieldset>
+										<legend>로그인</legend>
+										<p class="user_id">
+											<input type="text" placeholder=" 아이디"/>
+										</p>
+										<p class="user_pw">
+											<input type="password" placeholder=" 비밀번호"/>
+										</p>
+										<p>
+											<input type="checkbox"name="save_id" id="save_id"/>
+											<label for="save_id">아이디 저장</label>
+										</p>
+										<p class="login_btn">
+											<input type="button" value="Login"/>
+										</p>
+										<p class="sch_wrap">
+											<a href="#">아이디 찾기</a><span>/</span>
+											<a href="#" class="sch_id_btn">비밀번호 찾기</a>
+										</p>
+										<div class="login_close_btn">
+											<a href="#">close</a>
+										</div>
+									</fieldset>
+								</form>
+							</li>
+							<li>
+								<a href="#">회원가입</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- id="header" -->
+		<div id="wrap">
+		<div id="section">
+		<div id="quick_menu">
+				<ul>
+				<li><a href="#"><img src="img/program_btn.png" alt="공연프로그램 안내"/>공연 프로그램 안내</a></li>
+				<li><a href="#"><img src="img/program1_btn.png" alt="전시프로그램 안내"/>전시 프로그램 안내</a></li>
+				<li><a href="#"><img src="img/time_btn.png" alt="운영시간 안내"/>운영시간 안내</a></li>
+				<li><a href="#"><img src="img/location_btn.png" alt="위치안내"/>위치안내</a></li>
+				<li class="last"><a href="#"><img src="img/bt_top.png" alt="위로"/>위로</a>
+				</li>
+			</ul>
+			</div>  <!-- id="quick_menu" -->
+			<div class="sub_menu">
+				<ul>
+					<p>커뮤니티</p>
+					<li><a href="#">공지사항</a></li>
+					<li class="active"><a href="#">Q&amp;A</a></li>
+					<li><a href="#">갤러리</a></li>
+				</ul>
+			</div>			
+			<div class="notice">
+				<h1>Q&amp;A</h1>
+				<div id="search_wrap" class="cf">
+					<form action="#" method="post">
+						<fieldset>
+							<label for="search">검색분류</label>
+							<select name="search" id="search">
+								<option value="제목">제목</option>
+								<option value="내용">내용</option>
+								<option value="글쓴이">글쓴이</option>
+							</select>
+							<label for="text">검색단어</label>
+							<input type="text" name="text" id="text"/>
+							<button type="submit">검색</button>
+						</fieldset>
+					</form>
+				</div> <!-- id="search_wrap" class="cf" -->
+				
+				
+				<div id="board">
+					<div class="first cf">
+						<div><span>번호</span></div>
+						<div class="title"><span>제목</span></div>
+						<div><span>글쓴이</span></div>
+						<div><span>등록일</span></div>
+					</div> <!-- class="first cf" -->
+					<div>
+						<label for="click10" class="cf">
+							<input type="radio" id="click10" name="click"/>
+							<div>10</div>
+							<div class="title">클래스 수강과정에서 도중 다른클래스로 변경이 가능할까요? </div>
+							<div>김가영</div>
+							<div>2030.7.10</div>
+							<div class="content_wrap">
+								<div class="subject">수강변경안내</div>
+								<div class="content">신청한 강좌를 완료하고 다음학기에 강좌를 신청하는것은 가능하오나, 도중 다른클래스로 변경하는것은 불가합니다. </div>
+							</div>
+						</label>
+					</div> <!-- 게시판 두번째줄 -->
+					<div>
+						<label for="click9" class="cf">
+							<input type="radio" id="click9" name="click"/>
+							<div>9</div>
+							<div class="title">공연 할인혜택은 어떤것이 있으며 어떻게 받을 수 있나요?</div>
+							<div>박나영</div>
+							<div>2030.7.9</div>
+							<div class="content_wrap">
+								<div class="subject">공연 할인혜택 안내</div>
+								<div class="content">5% 할인 : 루미에르 유료회원(골드회원, 블루회원, 우리V플래티늄회원)
+10% 할인 : 루미에르 후원회원 및 장애인, 국가유공자
+
+※ 후원회원 및 장애인, 국가유공자 할인혜택은 전화 결제만 가능합니다. 각 클래스 아카데미로 문의해 주시기 바랍니다.</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 세번째줄 -->
+					<div>
+						<label for="click8" class="cf">
+							<input type="radio" id="click8" name="click"/>
+							<div>8</div>
+							<div class="title">클래스 수강확인증을 받을 수 있습니까?</div>
+							<div>이다영</div>
+							<div>2030.7.8</div>
+							<div class="content_wrap">
+								<div class="subject">수강확인증 안내 </div>
+								<div class="content">각 클래스 아카데미 사무실에서 받을 수 있으며, 신청서를 작성하시면 수강확인증을 발급 받을 수 있습니다.(약1주일 소요)</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 네번째줄 -->
+					<div>
+						<label for="click7" class="cf">
+							<input type="radio" id="click7" name="click"/>
+							<div>7</div>
+							<div class="title">개인사정으로 인해 클래스수강을 철회하고 환불받으려고 합니다. 환불정책에 대해 알려주세요.</div>
+							<div>김미영</div>
+							<div>2030.7.7</div>
+							<div class="content_wrap">
+								<div class="subject">환불및 교환정책 </div>
+								<div class="content">클래스가 시작된 후 1주일이내: 90%환불가능
+								1개월 후: 30%환불가능
+								1개월 이상: 불가능</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 다섯번째줄 -->
+					<div>
+						<label for="click6" class="cf">
+							<input type="radio" id="click6" name="click"/>
+							<div>6</div>
+							<div class="title">거리두기단계 격상 이후 공간대여에 대한 새로운 방역지침에대해 안내해주세요.</div>
+							<div>김서영</div>
+							<div>2030.7.6</div>
+							<div class="content_wrap">
+								<div class="subject">거리두기단계 격상이후 새로운 방역지침</div>
+								<div class="content">코로나19로 인한 4단계 격상이후 루미에르 전체적으로 공간이용지침이 새로 업데이트 되었습니다. 자세한 사항은 루미에르 자료실에 관련 빙역지침서류를 올려드렸으니 보시고 공간이용에 참고 바랍니다.</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 여섯번째줄 -->
+					<div>
+						<label for="click5" class="cf">
+							<input type="radio" id="click5" name="click"/>
+							<div>5</div>
+							<div class="title">주차요금은 어떻게 정산되나요?</div>
+							<div>신민호</div>
+							<div>2030.7.5</div>
+							<div class="content_wrap">
+								<div class="subject">주차요금 안내</div>
+								<div class="content">루미에르공간을 이용하시는 모는 분들께는 주차요금을 따로 받고있지 않습니다.다만 루미에르 주차장이 아닌곳에 주차를 하게 된다면 2시간이내에만 무료주차가 가능하오니 참고바랍니다.</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 일곱번째줄 -->
+					<div>
+						<label for="click4" class="cf">
+							<input type="radio" id="click4" name="click"/>
+							<div>4</div>
+							<div class="title">아이동반공연에 대한 보호자 티켓도 할인혜택을 받나요?</div>
+							<div>고민지</div>
+							<div>2030.7.4</div>
+							<div class="content_wrap">
+								<div class="subject">아동및 청소년동반티겟 할인안내</div>
+								<div class="content">아동및 청소년이 15세 미만일 경우 보호자1인에 한해서 청소년티켓이 적용됩니다.</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 여덟번째줄 -->
+					<div>
+						<label for="click3" class="cf">
+							<input type="radio" id="click3" name="click"/>
+							<div>3</div>
+							<div class="title">애견동반문의</div>
+							<div>한민수</div>
+							<div>2030.7.3</div>
+							<div class="content_wrap">
+								<div class="subject">애견동반가능 공간이용안내</div>
+								<div class="content">루미에르 야외공간과 1층 카페는 애견동반이 가능하나 전시공간과 공연장의경우 애견출입이 불가능합니다.</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 아홉번째줄 -->
+					<div>
+						<label for="click2" class="cf">
+							<input type="radio" id="click2" name="click"/>
+							<div>2</div>
+							<div class="title">전시장과 공연장내 취식관련문의</div>
+							<div>백민희</div>
+							<div>2030.7.2</div>
+							<div class="content_wrap">
+								<div class="subject">취식문의</div>
+								<div class="content">영화관 내 루미에르 카페에서 제공되는 다과를 드실 수 있지만, 공연장과 전시장에선 생수를 제외한 취식은 불가합니다.</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 열번째줄 -->
+					<div>
+						<label for="click1" class="cf">
+							<input type="radio" id="click1" name="click"/>
+							<div>1</div>
+							<div class="title">지난공연굿즈에 대해 문의 드립니다.</div>
+							<div>강민석</div>
+							<div>2030.7.1</div>
+							<div class="content_wrap">
+								<div class="subject">공연굿즈 안내</div>
+								<div class="content">지난 공연굿즈는 관련공연사무실로 연락바랍니다.</div>
+							</div>
+						</label>
+					</div> <!-- 게시판 마지막줄 -->
+				</div> <!-- id="board" -->
+				<div id="page" class="cf">
+					<div class="prev">이전</div>
+					<div>1</div>
+					<div>2</div>
+					<div>3</div>
+					<div>4</div>
+					<div>5</div>
+					<div class="next">다음</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div id="footerMenu">
+			<div class="inner">
+				<ul class="cf">
+					<li><a href="#">운영기관 안내</a></li>
+					<li class="blue"><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li class="blue"><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">고객지원</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="inner">
+				<img src="images/logo-white_.png" alt="하단로고"/>
+				<p class="address">
+					회사명 : 루미에르 복합문화공간 | 사업자 등록번호 : 123-45-6789 | 대표자명 : 홍길동 | 대표전화 : 02-123-0000 | FAX : 02-123-4567 | 주소 : 서울특별시 용산구 신흥로22가길 25 | 통신판매번호 : 제2020-서울용산 7777호 | 고객센터 : <a href="#">customer@lumiere.com</a>
+				</p>
+				<p>copyright&copy; Lumiere. All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

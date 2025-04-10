@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>  <!-- bxSlider 플러그인 연동 -->
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>  <!-- 쿠키 플러그인 연동 -->
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script> <!-- UI 플러그인 연동 -->
+	
+</head>
+<body>
+	
+		<div id="header">
+			<div class="gnb_inner">
+				<div class="gnb_wrap">
+					<div class="logo"><a href="main.html"><img src="images/logo-up-.png" alt="회사로고"/></a></div>
+					<div class="gnb_bg"></div>
+					<ul class="gnb">
+						<li><a href="sub1.html">회사소개</a>
+							<ul class="sub1">
+								<li><a href="sub1.html">회사소개</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">주요시설</a>
+							<ul class="sub2">
+								<li><a href="#">카페</a></li>
+								<li><a href="#">서점</a></li>
+								<li><a href="#">공연장</a></li>
+								<li><a href="sub2.html">전시장</a></li>
+							</ul>
+						</li>
+						<li><a href="sub3.html">프로그램</a>
+							<ul class="sub3">
+								<li><a href="sub3.html">공연</a></li>
+								<li><a href="sub3.html">전시</a></li>
+								<li><a href="sub3.html">대관/단체관람</a></li>
+							</ul>
+						</li>
+						<li><a href="sub4.html">커뮤니티</a>
+							<ul class="sub4">
+								<li><a href="sub4.html">공지사항</a></li>
+								<li><a href="sub4.html">Q&amp;A</a></li>
+								<li><a href="sub4.html">갤러리</a></li>
+							</ul>
+						</li>
+						<li><a href="sub5.html">스토어</a>
+							<ul class="sub5">
+								<li><a href="sub5.html">도서</a></li>
+								<li><a href="sub5.html">디퓨져</a></li>
+								<li><a href="sub5.html">공연굿즈</a></li>
+								<li><a href="sub5.html">원두</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="top_menu">
+						<ul>
+							<li class="login_wrap">
+								<a href="#">로그인</a>
+								<form action="#" method="post"name="login" id="login">
+									<fieldset>
+										<legend>로그인</legend>
+										<p class="user_id">
+											<input type="text" placeholder=" 아이디"/>
+										</p>
+										<p class="user_pw">
+											<input type="password" placeholder=" 비밀번호"/>
+										</p>
+										<p>
+											<input type="checkbox"name="save_id" id="save_id"/>
+											<label for="save_id">아이디 저장</label>
+										</p>
+										<p class="login_btn">
+											<input type="button" value="Login"/>
+										</p>
+										<p class="sch_wrap">
+											<a href="#">아이디 찾기</a><span>/</span>
+											<a href="#" class="sch_id_btn">비밀번호 찾기</a>
+										</p>
+										<div class="login_close_btn">
+											<a href="#">close</a>
+										</div>
+									</fieldset>
+								</form>
+							</li>
+							<li>
+								<a href="#">회원가입</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- id="header" -->
+		<div id="wrap">
+		<div id="section">
+			<div class="slide_wrap">
+				<span class="prev"><a href="#"><img src="images/left_arr.png" alt="이전"/></a></span>
+					<div class="slide_banner">
+						<ul class="slide">
+							<li class="visual_0"><a href="sub2.html"><img src="images/banner1.jpg"alt=""/></a></li>
+							<li class="visual_1"><a href="sub2.html"><img src="images/banner3.jpg" alt=""/></a></li>
+							<li class="visual_2"><a href="sub2.html"><img src="images/banner2.jpg" alt=""/></a></li>
+							<li class="visual_3"><a href="sub2.html"><img src="images/banner4.jpg" alt=""/></a></li>
+							
+						</ul>
+					</div>
+				<span class="next"><a href="#"><img src="images/right_arr.png" alt="이전"/></a></span>
+				<div class="slide_text_panel">
+					<div class="slider_text">
+					<div class="text_inner"></div>
+						<h2>CAFE</h2>
+						<p>고소한 원두의 진한 향과 바깥 풍경을 여유롭게<br/>
+						즐길 수 있는 카페가 여러분을 기다리고 있습니다.</p>
+					</div>
+					<div class="slider_text">
+						<h2>BOOKSTORE</h2>
+						<p>예술 전문 도서관으로 재생과 친환경을 통한 도심 속의 쉼의 공간으로 추구합니다.</p>
+					</div>
+					<div class="slider_text">
+						<h2>CONCERTHALL</h2>
+						<p>사랑하는 음악과 예술을 <br/>무대에 올리고자 만들어진 아트홀</p>
+					</div>
+					<div class="slider_text">
+						<h2>EXHIBITIONHALL</h2>
+						<p>영감이 머무르는, 비밀스러운 창작의 아지트</p>
+					</div>
+				</div><!-- class="slide_text" -->
+				<div class="control_panel">
+					<div class="control_button on"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					<div class="control_button"></div>
+					
+				</div>
+			</div><!-- class="slide_wrap" -->
+			<div id="quick_menu">
+			<ul>
+				<li><img src="images/prog1.png" alt="위로"/><a href="sub3.html">공연 프로그램 안내</a></li>
+				<li><img src="images/prog2.png" alt="위로"/><a href="sub3.html">전시 프로그램 안내</a></li>
+				<li><img src="images/time.png" alt="위로"/><a href="sub2.html">운영시간 안내</a></li>
+				<li><img src="images/location.png" alt="위로"/><a href="sub1.html">위치안내</a></li>
+				<li class="last"><a href="#top" class="quick_btn"><img src="images/top.png" alt="위로"/>Top</a>
+				</li>
+			</ul>
+		</div>  <!-- id="quick_menu" -->
+			<div class="content">
+				<div class="program_wrap">
+					<div class="prog_info">
+						<h2>프로그램 이용안내</h2>
+						<hr/>
+						<p>지치는 일상 속 나를 환기 시켜줄 루미에르만의 또 하나의 즐거움을 즐기세요. <br/>공간 대여는 물론 다양한 전시와 공연들을 즐겨보세요. <br/>
+						</p>
+					</div>
+					<div class="prog_icon">
+							<div class="icon1 first"><a href="sub3.html"><img src="images/icon1.png" alt="공연"/><p>공연</p></a></div>
+							<div class="icon2"><a href="sub3.html"><img src="images/icon2.png" alt="전시"/><p>전시</p></a></div>
+							<div class="icon3"><a href="sub3.html"><img src="images/icon3.png" alt="대관"/><p>대관</p></a></div>
+					</div>
+					
+				</div>
+				<div class="best_item_wrap">
+					<h2>BEST ITEM</h2>
+					<div class="best_item">
+						<ul>
+							<li><a href="#"><img src="img/book1.jpg" alt=""><p>내안에 어린아이가 울고 있다</p><span><del>15,000</del><br/>13,000</span></img></a></li>
+							<li><a href="#"><img src="img/book2.jpg" alt=""><p>달러구트 꿈 백화점</p><span><del>16,000</del><br/>14,900</span></img></a></li>
+							<li><a href="#"><img src="img/book3.jpg" alt=""><p>행복해지려는 관성</p><span><del>15,000</del><br/>12,900</span></img></a></li>
+							<li><a href="#"><img src="img/book4.jpg" alt=""><p>아파트 생물학</p><span><del>13,000</del><br/>11,500</span></img></a></li>
+							<li><a href="#"><img src="img/book5.jpg" alt=""><p>오늘밤,세계에서 이 사랑이 사라진다해도</p><span><del>13,000</del><br/>11,500</span></img></a></li>
+							
+							
+						</ul>
+						<p class="prev_btn"><a href="#"><img src="images/slide-sub-left-button-black.png" alt="이전으로 이동"/></a></p>
+						<p class="next_btn"><a href="#"><img src="images/slide-sub-right-button-black.png" alt="다음으로 이동"/></a></p>
+					</div>
+				</div>
+			</div><!-- class="content" -->
+				<div class="fixedimg"><div class="fixbg"></div>
+
+				<div class="board_wrap">
+					<div class="board">
+						<h3>공지사항</h3>
+						<ul>
+							<li>
+								<a href="#"><span>[2030.09.14]</span><p>공지사항을 알립니다.</p></a>
+							</li>
+							<li>
+								<a href="#"><span>[2030.09.11]</span><p>반갑습니다. 루미에르입니다</p></a>
+							</li>
+							<li>
+								<a href="#"><span>[2030.09.10]</span><p>저희 시설을 방문해주시는 고객님들께</p></a>
+							</li>
+							<li>
+								<a href="#"><span>[2030.09.06]</span><p>루미에르 이용 후기 작성 안내</p></a>
+							</li>
+							<li>
+								<a href="#"><span>[2030.09.05]</span><p>대관 신청과 일정확인에 대하여</p></a>
+							</li>
+							<li>
+								<a href="#"><span>[2030.09.01]</span><p>9월 시설 안내 사항</p></a>
+							</li>
+							<li>
+								<a href="#"><span>[2030.09.01]</span><p>주요시설 이용 시간변경 및 방역지침에 관하여 안내드립니다.</p></a>
+							</li>
+						</ul>
+						<button type="button">공지사항 더보기</button>
+					</div>
+					<div id="calendar">
+						<div class="calendar_header">
+								<button class="mPrev"type="button"><</button>
+								<h3><span class="year">2019</span>.<span class="month">2019</span></h3>
+								<button class="mNext" type="button">></button>
+							</div>
+							<table>
+								<tr>
+									<th>sun</th>
+									<th>mon</th>
+									<th>tue</th>					
+									<th>wed</th>					
+									<th>thu</th>					
+									<th>fri</th>					
+									<th>sat</th>					
+								</tr>
+								<tr>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p>1</p><span></span></td>
+									<td><p>2</p></td>
+									<td><p>3</p></td>
+									<td><p>4</p></td>
+								</tr>
+								<tr>
+									<td><p>5</p><span></span></td>
+									<td><p>6</p></td>
+									<td><p>7</p></td>
+									<td><p>8</p></td>
+									<td><p>9</p></td>
+									<td><p class="today">10</p><span></span></td>
+									<td><p>11</p></td>
+								</tr>
+								<tr>
+									<td><p>12</p></td>
+									<td><p>13</p></td>
+									<td><p>14</p></td>
+									<td><p>15</p></td>
+									<td><p>16</p></td>
+									<td><p>17</p></td>
+									<td><p>18</p></td>
+								</tr>
+								<tr>
+									<td><p>19</p></td>
+									<td><p>20</p><span></span></td>
+									<td><p>21</p></td>
+									<td><p>22</p></td>
+									<td><p>23</p></td>
+									<td><p>24</p></td>
+									<td><p>25</p></td>
+								</tr>
+								<tr>
+									<td><p>26</p></td>
+									<td><p>27</p></td>
+									<td><p>28</p></td>
+									<td><p>29</p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+								</tr>
+								<tr>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+									<td><p></p></td>
+								</tr>
+							</table>
+						
+					</div>
+					<div class="prog_board">
+						<div class="prog_board_top">
+							<h3>행사일정 안내</h3>
+							<a href="#">more+</a>
+						</div>
+						<ul>
+							<li>
+								<div class="type">전시회</div>
+								<div class="prog_text">
+									<p>가을의 작은 그림 전시회</p>
+									<span>2030-09-01~2030-10-01</span>
+								</div>
+							</li>
+							<li>
+								<div class="type">공연</div>
+								<div class="prog_text">
+									<p>이 순간을, 당신과 함께</p>
+									<span>2030-09-05</span>
+								</div>
+							</li>
+							<li class="last">
+								<div class="type">전시회</div>
+								<div class="prog_text">
+									<p>통! 통 !통!</p>
+									<span>2030-09-01~2030-09-11</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div><!-- class="board_wrap" -->
+			</div><!-- class="fixedimg" -->
+		</div><!-- id="section" -->
+		<p id="pop_wrap">
+				<img src="images/pop.jpg" alt="event" usemap="#pop"/>
+				<map name="pop" id="pop">
+					<area shape="rect" coords="320,397,350,413" href="#" alt="창닫기"/>
+					<area shape="rect" coords="161,396,289,418" href="#" alt="하루동안 창 닫기"/>
+				</map>
+			</p>
+	</div>
+	
+	<footer>
+		<div id="footerMenu">
+			<div class="inner">
+				<ul class="cf">
+					<li><a href="#">운영기관 안내</a></li>
+					<li class="blue"><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li class="blue"><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">고객지원</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="copyright">
+			<div class="inner">
+				<img src="images/logo2.png" alt="하단로고"/>
+				<p class="address">
+					회사명 : 루미에르 복합문화공간 | 사업자 등록번호 : 123-45-6789 | 대표자명 : 홍길동 | 대표전화 : 02-123-0000 | FAX : 02-123-4567 | 주소 : 서울시 ㄱㄴ구 ㄷㄻ 대로 ㅂㅈㄷㄱ378 | 통신판매번호 : 제2020-서울강남 7777호 | 고객센터 : <a href="#">customer@lumiere.com</a>
+				</p>
+				<p>copyright&copy; Lumiere. All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

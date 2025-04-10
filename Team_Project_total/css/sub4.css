@@ -1,0 +1,50 @@
+﻿/* sub4 */
+* {margin: 0;padding: 0;} 
+body {font-size: 13px;}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+.cf:after{content:''; display:block; clear:both;}
+.fl{float:left;}
+#section{width:1600px; height:750px;}
+.banner{width:1600px; height:500px; background:yellow;}
+
+.notice{width:950px; height:700px; float:left; margin-left:70px;}
+/* 게시판 검색창 */
+#search_wrap label{display:none;}
+#search_wrap fieldset{float:right; margin-bottom:10px; border:0;}
+#search_wrap select, #search_wrap input{vertical-align:middle; font-size:14px; display:block; float:left; margin-right:2px; border:1px solid #2e2e2e;}
+#search_wrap select{height:24px;}
+#search_wrap input{height:22px; line-height:22px; width:110px;}
+#search_wrap button{height:24px; width:60px; border:0; background:#aaa; color:#fff;} 
+#search_wrap button:hover{color:#333; cursor:pointer;}
+
+/* 게시판목록 */
+#board > div{border-bottom: 1px dotted #f90;}
+#board > div:hover{background:#ffe;}
+#board > div.first{background:#fff; color:#000; font-weight:bold; font-size:15px; border-bottom:3px solid #222222;}
+#board > div.first > div{width:100px; line-height:50px; height:50px; text-align:center; float:left;}
+#board >div > label > input{display:none;}
+#board >div > label > div{width:100px; line-height:50px; height:50px; text-align:center; float:left;}
+
+/* 게시판 세부목록 */
+#board > div.first > div.title{width: 490px; margin-right:10px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; cursor:pointer;}
+#board > div > label > div.title{width: 490px; text-align:left; margin-right:10px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer;}
+#board > div > label > div.content_wrap{line-height:auto; height: auto; width: 96%; text-align:left; padding:2%; display:none;}
+
+#board input:checked ~ div.content_wrap{display:block;}
+
+.subject{font-weight:bold; font-size:16px; background:#ffefbf; padding:10px 20px; line-height:26px;}
+.content{padding:10px 20px; background:#fff; line-height:24px; border-bottom: 1px solid #ddd;}
+
+/* 번호 */
+#page{position:relative; float:left; left:50%; top: 50px;}
+#page > div{position:relative; float:left; left:-50%; padding:2px 10px; margin:0 10px; cursor:pointer;}
+.prev, .next{text-indent: -99999px;}
+.prev{background:url(../images/next01.gif) no-repeat center center;}
+.next{background:url(../images/next02.gif) no-repeat center center;}
+
+

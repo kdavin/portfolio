@@ -1,0 +1,97 @@
+﻿/* sub2 */
+html{overflow-y:scroll; font-family:'Nanum Gothic';}
+@font-face {font-family: 'Pretendard-Regular'; src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400; font-style: normal;}
+#section{width:1600px; height:1950px;}
+
+/* 이미지 배너 */
+.banner{width:1600px; height:500px;}
+.banner img{width:100%; height:500px;}
+
+/* 메인메뉴 로고 */
+
+.gnb_wrap .logo{width:150px; height:70px; float:left; }
+.gnb_wrap .logo img{width:150px; height:70px; float:left;}
+
+
+/* space name : 공간이름 */
+.content{width:1300px; height:1000px; float:left;}
+.content .space_name{width:1300px; height:180px; margin-top:55px;}
+.content .space_name h2{margin-top:20px; color:#333;font-weight:bold; font-size:2em; margin-left:20px; letter-spacing:-2px;}
+.content .space_name h3{font-weight:bold; font-size:2.5em; margin-left:20px; }
+.content .space_name p{font-weight:bold; font-size:1em; margin-left:25px; color:#999;}
+
+.content .space_info{height:1300px; height:800px;}
+.border_box{width:650px; height:5px; float:left;}
+
+/* info-text : overview 공간소개 */
+.content .info_text{width:650px; height:300px; float:left;}
+.content .info_text .border_box{width:650px; margin-left:10px; height:20px; float:left;}
+.content .info_text .border_box h2{width:170px; height:20px; float:left; margin-top:-15px; margin-left:0px; padding:5px 0 0 25px;}
+.content .info_text .border_box .border{float:left; width:170px; margin-left:10px; border-top:2px solid #333;}
+.content .info_text .info_inner{float:left; margin-top:20px; width:85%; height:270px; margin:0 20px;}
+.content .info_text .info_inner dt{font-size:1em; letter-spacing:-1px;  margin-left:5px; font-weight:bold; line-height:1.5; margin-top:15px; width:50px; color:#9D3F39;}
+.content .info_text dd{margin-left:20px; text-align:left; font-size:0.9em; line-height:1.3;}
+
+/* info-sub : facility 시설 정보 */
+.content .info_sub{width:650px; height:300px; float:left;}
+.content .info_sub .border_box{width:650px; margin-left:20px; height:20px; float:left;}
+.content .info_sub .border_box h2{width:165px; height:20px; float:left; margin-top:-10px; margin-left:25px;}
+.content .info_sub .border_box .border{float:left;width:220px; height:20px; border-top:2px solid #333;}
+.content .info_sub table{width:500px; height:240px; margin-left:75px; border:1px solid #aaa; border-collapse:collapse;}
+.content .info_sub th,td{border:1px solid #aaa; margin-top:20px; margin-top:30px; margin:0 auto; text-align:center; border-collapse:collapse; height:}
+.content .info_sub table{width:500px; margin-top:30px;}
+.content .info_sub tbody{margin-top:30px;}
+ 
+/* info-menu : 대관 안내 및 환불 규정  */
+.content .info_menu{width:650px; height:500px; margin-top:15px; clear:both; float:left;}
+.content .info_menu .border_box{width:650px; height:20px; float:left; margin-top:10px;}
+.content .info_menu .border_box h2{width:350px; margin-left: 5px; height:20px; float:left; margin-top:-10px;}
+.content .info_menu .border_box .border{float:left; width:110px; height:20px; border-top:2px solid #333;}
+.content .info_menu strong{padding-top:5px; font-weight:bold; font-size:1em; letter-spacing:-1px; text-align:left; margin-left:25px; color:#0000d9; border-bottom:2px solid #0000d9;}
+.content .info_menu table{margin-top:10px; font-size:0.9em; letter-spacing:-1px; margin-left:50px; color:#626262; border:1px solid #aaa; width:500px; height:200px; border-collapse:collapse;}
+.content .info_menu table{margin-top:10px; font-size:0.9em; letter-spacing:-1px; text-align:left; margin-left:50px; color:#626262; border:1px solid #aaa; width:500px; height:200px; border-collapse:collapse;}
+.content .info_menu tr{font-size:0.9em; letter-spacing:-1px; text-align:center; color:#626262; border:1px solid #aaa;border-collapse:collapse;}
+.content .info_menu th{border:1px solid #aaa;border-collapse:collapse;}
+.content .info_menu dt{font-weight:bold; font-size:1em; letter-spacing:-1px; margin-left:25px; line-height:1.5; color:#9D3F39; margin-top:15px;}
+.content .info_menu dd{margin-left:35px; font-size:0.9em; letter-spacing:-1px; color:#333; line-height:1.3;}
+
+/* calendar : reservation status 대관 예약 현황 */
+#calendar{width:600px;height:500px; margin-top:-5px; padding:20px; float:left;}
+#calendar .border_box{width:650px; height:20px; margin-left:10px; float:left ;margin-top:10px;}
+#calendar .border_box h2{width:300px; height:20px; margin-left:10px; float:left ;margin-top:-13px;}
+#calendar .border_box .border{width:150px; height:20px; float:left; border-top:2px solid #333;}
+#calendar .calendar_header{width:590px; height:30px; margin-top:65px;}
+#calendar .calendar_header button{width:25px; height:25px; margin-left:50px; float:left;}
+#calendar .calendar_header h3{text-align:center; width:370px; height:30px; font-size:20px; float:left; margin-left:50px;}
+#calendar .calendar_header table{border:1px solid #aaa; clear:both; margin:20px 0;}
+#calendar table{width:525px; height:20px;border:1px solid #aaa; clear:both; margin-left:50px; margin-top:5px; border-collapse:collapse;}
+#calendar table th{width:75px; height:30px;border:1px solid #aaa;text-align:center; background:#E1D5B9;}
+#calendar table td{width:75px; height:40px;border:1px solid #aaa;text-align:center; vertical-align:top;line-height:20px; background:#fff;}
+#calendar table .today{ background:#3D5463; border-radius:50%; width:20px;height:20px; line-height:20px;color:#fff;margin:0 auto;}
+#calendar table span.dot{display:block; background:#3D5463; border-radius:50%; width:7px;height:7px;margin:5px auto;}
+#calendar table span.schedule{width:150px; height:35px;display:none; font-size:0.7em; line-height:1.1; white-space:nowrap; border:1px solid #aaa; background:#fff; position:absolute;text-align:left;margin:10px;}
+#calendar table span:hover span.schedule{width:150px; height:35px;display:block;background:#fff;}
+
+/* gallery : 이용 후기 */
+.gallery{width:1300px; height:350px; position:relative;}
+.gallery .border_box{float:left; width:1300px; height:35px; }
+.gallery .border_box h2{float:left; padding-left:65px; padding-right:40px; width:300px; height:35px; margin-top:-10px;}
+.gallery .border_box .border{float:left; width:430px; height:35px; border-top:2px solid #333;}
+.gallery .gallery_inner{float:left; margin:0 33px; width:1208px; height:300px; position:relative;}
+.gallery .tab li{ float:left; width:600px; height:30px; text-align:center;  border-radius:5px 5px 0 0; margin-left:0px; cursor:pointer; line-height:30px; background:#fff; border:2px solid #486256;}
+.gallery .tab li:hover{opacity:0.7; float:left; color:#fff;}
+.gallery .tab li a{font-weight:bold;font-size:16px;}
+.gallery  ul .active{background:#486256;}
+.gallery  ul .active a{background:#486256;color:#ffffff;}
+.gallery .tab_content{position:relative;} 
+
+.gallery .tab_content div ul{margin-top:20px;}
+.gallery .tab_content .exhibition ul li a{display:block; float:left; overflow:hidden; text-align:center; color:#333;}
+.gallery .tab_content .exhibition ul li img{width:150px; height:150px; margin-right:15px; display:block; margin-top:10px; margin-left:32px;}
+.gallery .tab_content .exhibition ul li span{display:block; float:left; width:150px; height:25px; font-size:0.9em; color:#333; text-align:center; text-overflow:ellipsis; margin-left:30px; }
+.gallery .tab_content>div{position:absolute; top:-1px; clear:both; width:1206px; height:220px; border:1px solid #ccc; font-size:14px; letter-spacing:-1px; line-height:1.7; margin-top:35px;}
+.gallery .tab_content .borrow ul li{float:left;}
+.gallery .tab_content .borrow ul li img{width:150px; height:150px; margin-left:30px; margin-top:10px; margin-right:15px; display:block;}
+.gallery .tab_content .borrow ul li span{display:block; float:left; width:150px; font-size:0.9em; color:#333; margin-left:35px; text-overflow:ellipsis;}
+.gallery .tab_content .borrow ul li:last-child img{margin-right:0;}
