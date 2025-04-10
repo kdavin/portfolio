@@ -1,0 +1,765 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>휠라</title>
+	<link rel="stylesheet" href="css/main.css"/>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>  <!-- bxSlider 플러그인 연동 -->
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>  <!-- bxSlider 플러그인 연동 -->
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="topMenuBar">
+				<div class="leftMenu">
+					<ul>
+						<li class="active"><a href="#">FILA</a></li>
+						<li><a href="#">UNDERWEAR</a></li>
+						<li><a href="#">KIDS</a></li>
+						<li><a href="#">GOLF</a></li>
+					</ul>
+				</div>
+				<div class="mainGnb">
+					<ul>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">회원가입</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">고객센터</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="mainlnb">
+				<div class="logo"></div>
+				<div class="menu">
+					<ul class="nav">
+						<li><a href="#">Men</a></li>
+						<li><a href="#">Women</a></li>
+						<li><a href="#">New</a></li>
+						<li><a href="#">Best</a></li>
+						<li><a href="#">Exclusive</a></li>
+						<li class="bar"><a href="#">maFILA</a></li>
+						<li><a href="#">Collection</a></li>
+						<li><a href="#">#110th</a></li>
+					</ul>
+				</div>
+				<div id="search">
+					<div class="searchBox">
+						<input type="text"/>
+						<a href="#">검색</a>
+					</div>
+					<div class="icon">
+						<div class="inner">
+							<a class="icon1" href="#">배송</a>
+							<a class="icon2" href="#">장바구니</a>
+						</div>
+					</div>
+				</div>
+				<div id="lnb_bg">
+					<div class="subBox1">
+						<div class="menu_list">
+							<ul class="sub1">
+								<h3>
+									<a href="#">의류</a>
+								</h3>
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">온라인단독</a></li>
+								<li><a href="#">퍼포먼스</a></li>
+								<li><a href="#">반팔티셔츠</a></li>
+								<li><a href="#">숏팬츠</a></li>
+								<li><a href="#">워터스포츠</a></li>
+								<li><a href="#">자켓/트랙탑</a></li>
+								<li><a href="#">맨투맨/후디</a></li>
+								<li><a href="#">롱팬츠</a></li>
+								<li><a href="#">보아 플리스 자켓</a></li>
+								<li><a href="#">다운자켓</a></li>
+								<li><a href="#">SALE</a></li>
+							</ul>
+							<ul class="sub2">
+								<h3>
+									<a href="#">신발</a>
+								</h3>
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">퍼포먼스</a></li>
+								<li><a href="#">헤리티지</a></li>
+								<li><a href="#">스니커즈</a></li>
+								<li><a href="#">사이클화</a></li>
+								<li><a href="#">GRB</a></li>
+								<li><a href="#">어글리슈즈</a></li>
+								<li><a href="#">뮬</a></li>
+								<li><a href="#">슬리퍼/샌들</a></li>
+								<li><a href="#">SALE</a></li>
+							</ul>
+							<ul class="sub3">
+								<h3>
+									<a href="#">용품</a>
+								</h3>
+								<li><a href="#">전체보기</a></li>
+								<li><a href="#">백팩</a></li>
+								<li><a href="#">토트/에코백</a></li>
+								<li><a href="#">크로스백</a></li>
+								<li><a href="#">힙색/슬링백</a></li>
+								<li><a href="#">모자</a></li>
+								<li><a href="#">양말</a></li>
+								<li><a href="#">ACC</a></li>
+								<li><a href="#">SALE</a></li>
+							</ul>
+						</div>
+						
+						<div class="menu_banner_wrap">
+							<ul class="menu_banner">
+								<li class="active">
+									<a href="#"><img src="images/menu_banner1.jpg" alt="배너1"/></a>
+									<h2>Fall in campus</h2>
+									<a href="#">Shop Now</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/menu_banner2.jpg" alt="배너2"/></a>
+									<h2>ONLINE EXCLUSIVE <br/>21FW PRE-ORDER</h2>
+									<a href="#">Shop Now</a>
+								</li>
+								<li>
+									<a href="#"><img src="images/menu_banner3.jpg" alt="배너3"/></a>
+									<h2>2021 FILA FALL COLLECTION <br/>FIND YOUR BASICS</h2>
+									<a href="#">Shop Now</a>
+								</li>
+							</ul>
+							<ul class="m_banner_buttons">
+								<li><button type="button" class="on">배너1</button></li>
+								<li><button type="button">배너2</button></li>
+								<li><button type="button">배너3</button></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="top_popup">
+				<a href="#">신규가입 시 10,000원 즉시 할인 혜택! >></a>
+				<a class="close"href="#">닫기<img src="images/ico_x_yl_18x18.png" alt=""/></a>
+			</div>
+		</header>
+		<div id="section">
+			<div id="main_slide">
+				<button class="slide_left_bt"><img src="images/arr_left_wt_9x15.png" alt=""/></button>
+				<ul>
+					<li class="slide1"><img src="images/slide1.jpg" alt="slide1"/>
+						<p class="left">
+							<span class="fila">FILA</span><span class="imgtext">HEAT UP THE WINTER<br/>Fila's 2nd Winter Drop</span><a href="#"><span class="more">자세히 보러가기</span></a>
+						</p>
+					</li>
+					<li class="slide2"><img src="images/slide2.jpg" alt="slide2"/>
+						<p class="center">
+							<span class="fila">FILA</span><span class="imgtext">BEST SELLER<br/>THANK YOU SALE</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide3"><img src="images/slide3.jpg" alt="slide3"/>
+						<p class="center">
+							<span class="fila">FILA</span><span class="imgtext">언제, 어디서나<br/>일상에서 런닝까지<br/>엑셀레이터 플랫폼</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide4"><img src="images/slide4.jpg" alt="slide4"/>
+						<p class="left">
+							<span class="fila">FILA</span><span class="imgtext">결국엔 베이직,<br/>매일매일<br/>PHOTINO LOW</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide5"><img src="images/slide5.jpg" alt="slide5"/>
+						<p class="left">
+							<span class="fila">FILA</span><span class="imgtext">FILA 런칭 110주년<br/>기념 이벤트<br/>엄청난 선물이 팡팡!</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide6"><img src="images/slide6.jpg" alt="slide6"/>
+						<p class="center">
+							<span class="fila">FILA</span><span class="imgtext">티셔츠로 만끽하는<br/>휠라의 헤리티지</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+				</ul>
+				<button class="slide_right_bt"><img src="images/arr_right_wt_9x15.png" alt=""/></button>
+				<div class="bar_btn">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="active"></div>
+				</div>
+			</div><!-- id="main_slide" -->
+			
+			<div id="md_item_wrap">
+				<h2>MD'S PICK</h2>
+					<div class="md_item">
+						<ul>
+							<li><a href="#"><img src="images/FE2POD6102X_SGR.jpg" alt=""></img></a>
+								<div class="info">
+									<p>&lt;온라인단독&gt; 에센셜 리니어 보아 후드 자켓</p>
+									<p class="price">79,000원</p>
+									<div class="color">
+										<img src="images/BEIGE.gif" alt=""/>
+										<img src="images/BLACK.gif" alt=""/>
+									</div>
+								</div>
+							</li>
+							<li><a href="#"><img src="images/FS3BPD6011X_BLK.jpg" alt=""></img></a>
+								<div class="info">
+									<p>츄잉 백팩</p>
+									<p class="price">129,000원</p>
+									<div class="color">
+										<img src="images/BEIGE.gif" alt=""/>
+										<img src="images/BLACK.gif" alt=""/>
+									</div>
+								</div>
+							</li>
+							<li><a href="#"><img src="images/1RM01792D_001.jpg" alt=""></img></a>
+								<div class="info">
+									<p>엑셀레이터 플랫폼</p>
+									<p class="price">79,000원</p>
+									<div class="color">
+										<img src="images/BEIGE.gif" alt=""/>
+										<img src="images/BLACK.gif" alt=""/>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#"><img src="images/1TM01576D_920.jpg" alt=""/></a>
+								<a href="#">
+									<div class="info">
+										<p>샌드 블라스트 로우 CV</p>
+										<p class="price">59,000원</p>
+										<div class="color">
+											<img src="images/BEIGE.gif" alt=""/>
+											
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/FS2JKD3102X_MAB.jpg" alt=""/></a>
+								<a href="#">
+									<div class="info">
+										<p>루즈핏 베이직 로고 아노락</p>
+										<p class="price">139,000원</p>
+										<div class="color">
+											<img src="images/BEIGE.gif" alt=""/>
+											
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#"><img src="images/FS2PLD4102X_STO.jpg" alt=""/></a>
+								<a href="#">
+									<div class="info">
+										<p>팝콘 보아 후드 자켓</p>
+										<p class="price">109,000원</p>
+										<div class="color">
+											<img src="images/BEIGE.gif" alt=""/>
+											<img src="images/GREY.gif" alt=""/>
+											<img src="images/BLACK.gif" alt=""/>
+											
+										</div>
+									</div>
+								</a>
+							</li>
+							
+						</ul>
+						
+					</div>
+					<p class="prev_btn"><a href="#"><img src="images/arr_left_bk_6x11.png" alt="이전으로 이동"/></a></p>
+						<p class="next_btn"><a href="#"><img src="images/arr_right_bk_6x11.png" alt="다음으로 이동"/></a></p>
+					<ul class="button">
+							<li><a href="#" class="active"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+					</ul>
+			</div><!-- id="md_item" -->
+			<div id="banner_box" class="cf">
+				<div class="banner01 w">
+					<img src="images/fila_기획전배너_30_21.jpg" alt=""/>
+					<p>EXCLUSIVE<br/>F/W OUTER COLLECTION</p>
+					<a class="w"href="#">Detail View</a>
+				</div>
+				<div class="banner02">
+					<div class="banner02_top w">
+						<img src="images/FE2DJD6104X_CRM.jpg" alt=""/>
+						<p>&lt;온라인 단독&gt; 오버핏 코쿤 웰론 숏패딩</p>
+						<a class="w"href="#">Detail View</a>
+					</div>
+					<div class="banner02_bottom">
+						<a href="#"><img src="images/FE2JKD6102X_BLK.jpg" alt=""/></a>
+						<a href="#"><img src="images/FE2JKD6102X_BEG.jpg" alt=""/></a>
+						<a href="#"><img src="images/FE2DJD6104X_LKH.jpg" alt=""/></a>
+					</div>
+				</div>
+			</div><!-- id="banner_box" -->
+			<div id="middle_slide">
+				<button class="slide_left_bt"><img src="images/arr_left_wt_9x15.png" alt=""/></button>
+				<ul>
+					<li class="slide1"><img src="images/01_fila_03middle_21.jpg" alt="slide1"/>
+						<p class="left">
+							<span class="fila">FILA</span><span class="imgtext"><span class="bold">FILA 프리미엄 멤버십 혜택</span><br/> 웰컴기프트+스페셜 쿠폰</span><a href="#"><span>자세히 보러가기</span></a>
+						</p>
+					</li>
+					<li class="slide2"><img src="images/slide2.jpg" alt="slide2"/>
+						<p class="center">
+							<span class="fila">FILA</span><span class="imgtext">BEST SELLER<br/>THANK YOU SALE</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide3"><img src="images/slide3.jpg" alt="slide3"/>
+						<p class="center">
+							<span class="fila">FILA</span><span class="imgtext">언제, 어디서나<br/>일상에서 런닝까지<br/>엑셀레이터 플랫폼</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide4"><img src="images/slide4.jpg" alt="slide4"/>
+						<p class="left">
+							<span class="fila">FILA</span><span class="imgtext">결국엔 베이직,<br/>매일매일<br/>PHOTINO LOW</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide5"><img src="images/slide5.jpg" alt="slide5"/>
+						<p class="left">
+							<span class="fila">FILA</span><span class="imgtext">FILA 런칭 110주년<br/>기념 이벤트<br/>엄청난 선물이 팡팡!</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+					<li class="slide6"><img src="images/slide6.jpg" alt="slide6"/>
+						<p class="center">
+							<span class="fila">FILA</span><span class="imgtext">티셔츠로 만끽하는<br/>휠라의 헤리티지</span><a href="#">자세히 보러가기</a>
+						</p>
+					</li>
+				</ul>
+				<button class="slide_right_bt"></button>
+				<div class="bar_btn">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div class="active"></div>
+				</div>
+			</div><!-- id="middle_slide" -->
+			
+			<div id="tab_content">
+				<div class="tab_btn">
+					<a href="#">Best</a>
+					<a href="#" class="active">Clothes</a>
+					<a href="#">Shoes</a>
+					<a href="#">Acc</a>
+					<a href="#">고객님을 위한 맞춤 상품</a>
+				</div>
+				<ul class="cf">
+					<li>
+						<a href="#"><img src="images/FE2JKD6101X_CRM.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>&lt;온라인단독&gt; 에센셜 리니어 보아 후드 자켓</p>
+								<p class="price">79,000원</p>
+								<div class="color">
+									<img src="images/BEIGE.gif" alt=""/>
+									<img src="images/BLACK.gif" alt=""/>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/FE2DJD6104X_BLK.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>&lt;온라인단독&gt; 오버핏 코쿤 웰론 숏패딩</p>
+								<p class="price_sale">129,000원 </p>
+								<span class="sale"> 99,000원(23%↓)</span>
+								<div class="color">
+									<img src="images/KHAKI.gif" alt=""/>
+									<img src="images/BEIGE.gif" alt=""/>
+									<img src="images/BLACK.gif" alt=""/>
+									<img src="images/GREY.gif" alt=""/>
+									
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/FE2JKD6101X_BLK.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>&lt;온라인단독&gt; 에센셜 리니어 보아 후드 자켓</p>
+								<p class="price">79,000원</p>
+								<div class="color">
+									<img src="images/BEIGE.gif" alt=""/>
+									<img src="images/BLACK.gif" alt=""/>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/FE2DJD6104X_LGY.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>&lt;온라인단독&gt; 오버핏 코쿤 웰론 숏패딩</p>
+								<p class="price_sale">129,000원 </p>
+								<span class="sale"> 99,000원(23%↓)</span>
+								<div class="color">
+									<img src="images/KHAKI.gif" alt=""/>
+									<img src="images/BEIGE.gif" alt=""/>
+									<img src="images/BLACK.gif" alt=""/>
+									<img src="images/GREY.gif" alt=""/>
+									
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/FE2JKD6102X_BEG.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>&lt;온라인단독&gt; 리버시블 보아 후드 자켓</p>
+								<p class="price_sale">99,000원 </p>
+								<span class="sale"> 79,000원(20%↓)</span>
+								<div class="color">
+									<img src="images/BEIGE.gif" alt=""/>
+									<img src="images/BLACK.gif" alt=""/>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/FE2DJD6104X_CRM.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>&lt;온라인단독&gt; 오버핏 코쿤 웰론 숏패딩</p>
+								<p class="price_sale">129,000원 </p>
+								<span class="sale"> 99,000원(23%↓)</span>
+								<div class="color">
+									<img src="images/KHAKI.gif" alt=""/>
+									<img src="images/BEIGE.gif" alt=""/>
+									<img src="images/BLACK.gif" alt=""/>
+									<img src="images/GREY.gif" alt=""/>
+									
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/FE2DJD6104X_LKH.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>&lt;온라인단독&gt; 오버핏 코쿤 웰론 숏패딩</p>
+								<p class="price_sale">129,000원 </p>
+								<span class="sale"> 99,000원(23%↓)</span>
+								<div class="color">
+									<img src="images/KHAKI.gif" alt=""/>
+									<img src="images/BEIGE.gif" alt=""/>
+									<img src="images/BLACK.gif" alt=""/>
+									<img src="images/GREY.gif" alt=""/>
+									
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/1TM01576D_920.jpg" alt=""/></a>
+						<a href="#">
+							<div class="info">
+								<p>샌드 블라스트 로우 CV</p>
+								<p class="price">59,000원</p>
+								<div class="color">
+									<img src="images/BEIGE.gif" alt=""/>
+									
+								</div>
+							</div>
+						</a>
+					</li>
+					
+				</ul>
+					<a href="#" class="more_btn">더 많은 상품 보러가기</a>
+			</div>
+			<div id="new_item" class="cf">
+				<div class="new_item_top">
+					<h2>NEW PRODUCT</h2>
+					<a href="#">전체보기</a>
+				</div>
+				<div id="new_item_wrap">
+					<div class="item_01">
+						<a href="#">
+							<img src="images/list_73.jpg" alt=""/>
+							<div class="info">
+								<p>HEAT UP THE WINTER</p>
+								<span>FILA</span>
+							</div>
+						</a>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/FS2DJD4105X_CRM.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>코듀로이 다운 자켓</p>
+											<span>249,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/FS2PLD4102X_STO.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>팝콘 보아 후드 자켓</p>
+											<span>109,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/FS2POD4102X_BTY.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>에센셜 1911 로고 후디</p>
+											<span>89,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/FS2DJD4102X_SWH.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>에센셜 미들 다운 자켓</p>
+											<span>219,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="item_02">
+						<a href="#">
+							<img src="images/list_46.jpg" alt=""/>
+							<div class="info">
+								<p>CREATE YOUR WINTER</p>
+								<span>FILA</span>
+							</div>
+						</a>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/FS2DVD4102X_BLK.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>컬러 배색 다운 베스트</p>
+											<span>169,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/FS2POD3125X_CRM.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>오버핏 타이포그래피 후디</p>
+											<span>69,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/FS2PLD4101X_BEG.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>팝콘 보아 카라 자켓</p>
+											<span>119,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/FS2DVD4102X_CRM.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>컬러 배색 다운 베스트</p>
+											<span>169,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="item_03">
+						<a href="#">
+							<img src="images/list_74.jpg" alt=""/>
+							<div class="info">
+								<p>RUN YOUR RACE<br/>FILA NEURON</p>
+								<span>FILA</span>
+							</div>
+						</a>
+						<ul>
+							<li>
+								<a href="#">
+									<img src="images/1RM01936D_001.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>휠라 뉴런 뉴클리어스 S</p>
+											<span>149,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/1RM01936D_108.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>휠라 뉴런 뉴클리어스 S</p>
+											<span>149,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/1RM01936D_100.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>휠라 뉴런 뉴클리어스 S</p>
+											<span>149,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="images/1RM01935D_001.jpg" alt=""/>
+									<div class="info">
+										<div class="inner">
+											<p>휠라 뉴런 임펄스 7</p>
+											<span>139,000원</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="insta" class="cf">
+				<h2>insta</h2>
+				<ul>
+					<div class="first_line">
+						<li><a href="#"><img src="images/insta1.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta2.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta3.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta4.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta5.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta6.jpg" alt=""/></a></li>
+					</div>
+					<div class="middle_line">
+						<li><a href="#"><img src="images/insta7.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta8.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta9.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta10.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta11.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta12.jpg" alt=""/></a></li>
+					</div>
+					<div class="last_line">
+						<li><a href="#"><img src="images/insta13.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta14.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta15.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta16.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta17.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/insta18.jpg" alt=""/></a></li>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="inner">
+				<ul id="footer_menu" class="cf">
+					<li><a href="#">About FILA</a>
+						<ul>
+							<li><a href="#">브랜드 연혁</a></li>
+							<li><a href="#">CEO 인사말</a></li>
+							<li><a href="#">CONTACT US</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Ethics</a>
+						<ul>
+							<li><a href="#">윤리경영</a></li>
+							<li><a href="#">윤리규범</a></li>
+							<li><a href="#">윤리규범실천서약</a></li>
+							<li><a href="#">거래윤리준칙</a></li>
+							<li><a href="#">실천프로그램</a></li>
+							<li><a href="#">제보센터</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Contact Us</a>
+						<ul>
+							<li><a href="#">매장안내</a></li>
+							<li><a href="#">A/S 안내조회</a></li>
+							<li><a href="#">대리점 개설문의</a></li>
+							<li><a href="#">FILA ONE 멤버쉽</a></li>
+							<li><a href="#">워니프렌즈 소개</a></li>
+							<li><a href="#">문의하기</a></li>
+							<li><a href="#">FILA 입찰참여안내</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Athletes</a>
+						<ul>
+							<li><a href="#">KOREAN TEAM</a></li>
+							<li><a href="#">GLOBAL TEAM</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Terms</a>
+						<ul>
+							<li><a href="#">통합회원 이용약관</a></li>
+							<li><a href="#" class="bold">개인정보 처리방침</a></li>
+							<li><a href="#">사업자 정보확인</a></li>
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</li>
+					<li class="sns"><a href="#">Connect With Us</a>
+						<ul>
+							<li class="cf">
+								<a href="#"><img src="images/ico_facebook_bk_10x19.png" alt=""/></a>
+								<a href="#"><img src="images/ico_twitter_bk_21x17.png" alt=""/></a>
+								<a href="#"><img src="images/ico_instagram_bk_19x19.png" alt=""/></a>
+								<a href="#"><img src="images/ico_youtube_bk_26x18.png" alt=""/></a>
+								<a href="#"><img src="images/ico_kakaotalk_bk_10x19.png" alt=""/></a>
+							</li>
+							<li><button>1:1 문의하기</button></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="footer_copy">
+				<div class="copy">
+					<div class="lang cf">
+						<a href="#">KOREA <span>(Change Country)</span></a>
+						<div>콘텐츠산업진흥법에 의한 콘텐츠보호안내
+							<span><a href="#">[자세히 보기]</a></span>
+						</div>
+					</div>
+					<div class="address">
+						<p>서울시 강동구 천호대로 1077 이스트센트럴타워 16층 휠라코리아(주) &nbsp;&nbsp;대표이사 윤근창   &nbsp;&nbsp;법인명(상호명) 휠라코리아(주) &nbsp;&nbsp;통신판매업신고 제 2020-서울강동-0160 호 <br/>
+							사업자등록번호 716-81-01573 개인정보 관리책임자 이학우&nbsp;&nbsp;&nbsp;FILA 대표번호 : 1577-3472&nbsp;&nbsp;&nbsp;<a href="#">FILAONLINE@FILA.COM</a> <br/>
+							본 사이트의 상품이미지 저작권은 휠라코리아(주)에 있으며, 내용의 무단복제를 금합니다. <br/>
+							COPYRIGHT C 2021. FILA KOREA. CO.,LTD. ALL RIGHTS RESERVED.
+						</p>
+					</div>
+				</div>
+				<div class="family_site">
+					<a href="#"><span>FAMILY SITE</span></a>
+					<ul>
+						<li><a href="https://www.keds.co.kr/main/main.asp">KEDS 온라인스토어</a></li>
+						<li><a href="http://www.johncookdelimeats.com/">FILA 입찰공고</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
